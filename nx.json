@@ -1,0 +1,46 @@
+{
+  "npmScope": "mreza-mladih-platform",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "M2I1ZTAwZDMtMWUxMi00OWUyLThhOGQtNmIyNzllMjNkOGQyfHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "mreza-mladih-platform": {
+      "tags": []
+    },
+    "mreza-mladih-platform-e2e": {
+      "tags": [],
+      "implicitDependencies": ["mreza-mladih-platform"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "database-service": {
+      "tags": []
+    }
+  }
+}
