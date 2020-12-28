@@ -67,7 +67,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* [**Ermin Muratovic**](https://github.com/ermin-muratovic) - *owner*
+* [**Ermin Muratović**](https://github.com/ermin-muratovic) - *owner*
+* [**Maid Sabanović**](https://github.com/Maido47) - *owner*
+* [**Malik Ćatić**]() - *owner*
 
 ## License
 
@@ -75,4 +77,6 @@ This project is licensed under the GPL License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-Thanks's to everybody supporting this project.
+Thanks to everybody supporting this project.
+
+Thanks to [**Uprava za vanjske poslove i dijasporu**](https://www.islamskazajednica.ba/adresar/uprave-rijaseta/uprava-za-vanjske-poslove-i-dijasporu) for supporting Mreza Mladih Dijaspore.
