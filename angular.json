@@ -21,7 +21,7 @@
               "apps/mreza-mladih-platform/src/assets"
             ],
             "styles": ["apps/mreza-mladih-platform/src/styles.scss"],
-            "scripts": []
+            "scripts": ["apps/mreza-mladih-platform/src/assets/js/main.js"]
           },
           "configurations": {
             "production": {
