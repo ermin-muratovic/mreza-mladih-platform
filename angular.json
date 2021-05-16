@@ -20,7 +20,7 @@
               "apps/mreza-mladih-platform/src/favicon.ico",
               "apps/mreza-mladih-platform/src/assets"
             ],
-            "styles": ["apps/mreza-mladih-platform/src/styles.scss"],
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css","apps/mreza-mladih-platform/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
