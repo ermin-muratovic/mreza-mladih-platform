@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  mode = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(): void {
+    this.mode = !this.mode;
   }
 
 }
