@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { MyDzematComponent } from './my-dzemat/my-dzemat.component';
 import { EventsComponent } from './events/events.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { UserComponent } from './user/user.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     LoginComponent,
     MyDzematComponent,
     EventsComponent,
-    KontaktComponent],
+    KontaktComponent,
+    UserComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
