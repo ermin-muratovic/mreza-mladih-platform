@@ -12,6 +12,7 @@ import { EventsComponent } from './events/events.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { UserComponent } from './user/user.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,10 @@ const appRoutes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'myDzemat', component: MyDzematComponent },
   { path: 'impressum', component: ImpressumComponent },
+
+  // '**' Muss immer ganz unten der Path Hierarchie stehen!!!
+  // Neue Paths bitte oberhalb der PageNotFound hinzufügen
+  { path: '**', component:PageNotFoundComponent },
 ];
 
 @NgModule({
@@ -32,7 +37,8 @@ const appRoutes: Routes = [
     EventsComponent,
     KontaktComponent,
     UserComponent,
-    ImpressumComponent],
+    ImpressumComponent,
+    PageNotFoundComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
