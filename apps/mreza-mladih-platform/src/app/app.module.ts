@@ -19,6 +19,7 @@ const appRoutes: Routes = [
   { path: 'kontakt', component: KontaktComponent },
   { path: 'events', component: EventsComponent },
   { path: 'myDzemat', component: MyDzematComponent },
+  { path: 'impressum', component: ImpressumComponent },
 ];
 
 @NgModule({
