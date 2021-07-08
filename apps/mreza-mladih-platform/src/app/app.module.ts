@@ -11,6 +11,7 @@ import { MyDzematComponent } from './my-dzemat/my-dzemat.component';
 import { EventsComponent } from './events/events.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { UserComponent } from './user/user.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     MyDzematComponent,
     EventsComponent,
     KontaktComponent,
-    UserComponent],
+    UserComponent,
+    ImpressumComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
