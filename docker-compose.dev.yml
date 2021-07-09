@@ -52,8 +52,8 @@ services:
       - LETSENCRYPT_HOST=${WEBSITE_HOSTNAME}
       - LETSENCRYPT_EMAIL=${OFFICE_EMAIL}
     volumes:
-      - ../website/dist:/usr/share/nginx/html
-      - ./docker/media:/usr/share/nginx/html/media
+      - ./apps/mreza-mladih-platform/dist:/usr/share/nginx/html
+      - ./docker/assets:/usr/share/nginx/html/assets
 
   api:
     build:
@@ -61,7 +61,7 @@ services:
       dockerfile: apps/api/Dockerfile
     restart: always
     volumes:
-      - ./docker/media:/home/app/service-gateway/media
+      - ./docker/assets:/home/app/api/assets
     networks:
       - docker_net
     links:
