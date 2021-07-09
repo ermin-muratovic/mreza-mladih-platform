@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import {Controller, Get, Post} from '@nestjs/common';
 
 import { Message } from '@mreza-mladih-platform/api-interfaces';
 
@@ -10,6 +10,12 @@ export class AppController {
 
   @Get('hello')
   getData(): Message {
+    return this.appService.getData();
+  }
+
+  @Post('addUser')
+  addData(): Message {
+    console.log("request");
     return this.appService.getData();
   }
 }
