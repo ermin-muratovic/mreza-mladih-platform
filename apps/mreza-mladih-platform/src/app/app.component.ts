@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {Dzemat, Message, Member} from '@mreza-mladih-platform/api-interfaces';
+import {ApiService} from "./_services/api-service/api.service";
 
 @Component({
   selector: 'mreza-mladih-platform-root',
@@ -12,11 +12,11 @@ export class AppComponent {
   public number;
   public dzemat: Dzemat;
 
-  public hello$ = this.http.get<Message>('/api/hello');
+  // public hello$ = this.http.get<Message>('/api/hello');
 
   public nameInput;
 
-  constructor(private http: HttpClient) {
+  constructor(private apiService: ApiService) {
     this.number = 0;
     this.dzemat = {
       name: "Dzemat Hamm",
@@ -29,15 +29,14 @@ export class AppComponent {
   }
 
   addMember() {
-    this.http.post("/api/addUser", { name: this.nameInput })
+    this.apiService.addMember({ name: this.nameInput })
       .subscribe(data => {
         console.log("data", data);
+        this.dzemat.members.push({
+          id: this.dzemat.members.length,
+          name: this.nameInput
+        });
+        this.nameInput = null;
       });
-
-    this.dzemat.members.push({
-      id: this.dzemat.members.length,
-      name: this.nameInput
-    });
-    this.nameInput = null;
   }
 }

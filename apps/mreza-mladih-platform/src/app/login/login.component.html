@@ -7,9 +7,7 @@
 
         <!--error message-->
         <!--<div th:if="${param.error}">
-          <div class="alert alert-danger">Invalid username or
-            password.
-          </div>
+          <div class="alert alert-danger">Invalid username or password.</div>
         </div>-->
 
         <!--logout message-->
@@ -55,22 +53,22 @@
           to our awesome app!</div>
       </div>-->
 
-      <form name="register" method="post" class="sign-up-formLOGSIGN">
+      <form name="register" class="sign-up-formLOGSIGN">
         <h2 class="titleLOGSIGN">Sign up</h2>
 
         <div class="input-fieldLOGSIGN">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="FirstName"/>
+          <input type="text" placeholder="FirstName" [(ngModel)]="member.firstname" />
         </div>
 
         <div class="input-fieldLOGSIGN">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="LastName"/>
+          <input type="text" placeholder="LastName" [(ngModel)]="member.lastname" />
         </div>
 
         <div class="input-fieldLOGSIGN">
           <i class="fas fa-envelope"></i>
-          <input type="email" placeholder="Email"/>
+          <input type="email" placeholder="Email" [(ngModel)]="member.email" />
         </div>
 
         <div class="input-fieldLOGSIGN">
@@ -83,7 +81,7 @@
           <input type="text" placeholder="Dzemat"/>
         </div>
 
-        <input type="submit" class="btnLOGSIGN" value="Sign up">
+        <input type="submit" class="btnLOGSIGN" value="Sign up" (click)="register()" />
 
 
         <!--<p class="social-textLOGSIGN">Or Sign up with social platforms</p>

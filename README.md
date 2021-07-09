@@ -26,7 +26,12 @@ TBD
 ## Build & Run
 The easiest way to run the API, DB and frontend all together is docker-compose:
 ```bash
-docker-compose up --build
+docker-compose up -d
+```
+
+On your local machine (windows) run:
+```bash
+docker-compose -f docker-compose.dev.yml up -d
 ```
 
 Without docker, things are a little more complicated:
