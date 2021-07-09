@@ -29,9 +29,13 @@ The easiest way to run the API, DB and frontend all together is docker-compose:
 docker-compose up -d
 ```
 
-On your local machine (windows) run:
+For development (Maid):
 ```bash
-docker-compose -f docker-compose.dev.yml up -d
+# run docker
+npm run start:docker:dev
+
+# build angular app (parallel)
+ng build --watch
 ```
 
 Without docker, things are a little more complicated:
